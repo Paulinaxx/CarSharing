@@ -282,6 +282,139 @@ h2.section2_title2::after {
     text-transform: uppercase;
     color: white;
 }
+section.page_content_contact {
+    margin: 100px auto 65px auto;
+}
+.page_content_contact .container {
+    display: flex;
+    flex-direction: column;
+}
+.page_content_contact .section3_title {
+    color: black;
+    display: flex;
+    text-align: center;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 35px;
+    align-self: center;
+}
+h2.section3_title::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: red;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    left: -60px;
+    top: calc(50% - 3px);
+}
 
+h2.section3_title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: red;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    right: -60px;
+    top: calc(50% - 3px);
+}
+.section3_content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.section3_content > *{
+    flex: 0 1 0;
+}
 
+.section3_content img {
+    width: 444px;
+    margin-right: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+input [type="text"],
+input [type="email"],
+textarea {
+    width: 444px;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    color: #B2B2B2;
+}
+input [type="text"]:focus,
+input [type="email"]:focus,
+textarea:focus {
+    box-shadow: 0 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+}
+input [type="text"]::placeholder,
+input [type="email"]::placeholder,
+textarea::placeholder {
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+}
+
+textarea {
+    resize: none;
+    height: 140px;
+}
+label {
+    font: normal normal 300 10px/14px Open Sans;
+    color: #B2B2B2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.customer-checkbox {
+    cursor: pointer;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    flex: 0 1 22px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+input[type="checkbox"]:checked + .customer-checkbox {
+    background-image: url("../images/Icon Check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.label-for-checkbox {
+    cursor: pointer;
+    flex: 1 1 0;
+}
+
+.btn form {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    color: #FF0000;
+    padding: 11px 52px;
+    align-self: flex-end;
+}
 
