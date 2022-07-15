@@ -188,13 +188,12 @@ h2.section_title::after {
     box-shadow: 0px 3px 6px #FF00004D;
     border-radius: 40px;
     margin-top: 15px;
-    padding: 15px 20px;
+    padding: 10px 25px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
 
-/*
 section.page_content_blog_articles_second {
     padding: 60px 0 100px 0;
     background: #28272C 0% 0% no-repeat padding-box;
@@ -204,5 +203,85 @@ section.page_content_blog_articles_second {
 .page_content_blog_articles_second .container {
     display: flex;
     flex-direction: column;
-} */
+}
+
+.page_content_blog_articles_second h2.section2_title2 {
+    color: white;
+}
+h2.section2_title2 {
+    display: flex;
+    text-align: center;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 35px;
+    align-self: center;
+}
+h2.section2_title2::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: red;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    left: -60px;
+    top: calc(50% - 3px);
+}
+
+h2.section2_title2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: red;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    right: -60px;
+    top: calc(50% - 3px);
+}
+.article_service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 235px;
+}
+.article_service img {
+    width: 170px;
+    /*height: 234px; */
+}
+
+.article-title {
+    text-align: left;
+    text-transform: uppercase;
+    font: normal normal normal 19px/26px Nunito Sans;
+    margin-top: 15px;
+}
+
+.article-text {
+    text-align: center;
+    font: normal normal 300 14px/19px Open Sans;
+    margin-top: 15px;
+    padding-right: 92px;
+}
+.article-btn-section2 {
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border-radius: 40px;
+    margin-top: 15px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+
 
