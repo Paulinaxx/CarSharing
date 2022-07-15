@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    width: 1088px;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.page-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.page-header .page-icon {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.page-header .page-logo span.logo {
+    color: #FF0000;
+}
+
+.page-nav-list {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+.page-nav-list a {
+    padding: 33px 40px;
+}
+
+.page-nav-list a:hover {
+    background: #FFFFFF33 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.banner {
+    height: calc(100vh - 28px);
+    background-image: url("../images/Image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffff;
+}
+
+.banner .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-title {
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+}
+.banner-text {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin: 40px 0 54px 0;
+}
+
+.banner-buttons {
+    display: flex;
+}
+.btn_btn_banner_red {
+    background: #FF0000 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    opacity: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    padding: 15px 28px;
+}
+
+.btn_btn_banner_white {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    opacity: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #FF0000;
+    padding: 15px 28px;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/Icon Arrow Down.svg");
+    bottom: 0;
+    left: calc(50% - 28px);
+}
+
+
+section.page_content_blog_articles_first {
+    margin: 100px auto;
+}
+.page_content_blog_articles_first .container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2.section_title {
+    display: flex;
+    text-align: center;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 35px;
+    align-self: center;
+}
+
+h2.section_title::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: red;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    left: -60px;
+    top: calc(50% - 3px);
+}
+
+h2.section_title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: red;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    right: -60px;
+    top: calc(50% - 3px);
+}
+
+.articles_blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 352px;
+    color: #6A6A6A;
+}
+.article img {
+    width: 350px;
+    /*height: 234px; */
+}
+
+.article-title {
+    text-align: left;
+    text-transform: uppercase;
+    font: normal normal normal 19px/26px Nunito Sans;
+    margin-top: 25px;
+}
+
+.article-text {
+    text-align: left;
+    font: normal normal 300 14px/19px Open Sans;
+    margin-top: 15px;
+    padding-right: 92px;
+}
+
+.article-btn {
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border-radius: 40px;
+    margin-top: 15px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*
+section.page_content_blog_articles_second {
+    padding: 60px 0 100px 0;
+    background: #28272C 0% 0% no-repeat padding-box;
+    color: white;
+}
+
+.page_content_blog_articles_second .container {
+    display: flex;
+    flex-direction: column;
+} */
+

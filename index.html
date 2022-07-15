@@ -6,10 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Car sharing</title>
     <link rel="stylesheet" href="css/reset.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="page-header">
+    <div class="container">
+        <a href="/" class="page-icon">
+            <img src="images/Icon%20Logo%20Normal.svg" alt="logo">
+            <span class="logo">Car<span>Sharing</span></span>
+        </a>
 
+        <nav class="page-nav">
+            <ul class="page-nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="banner">
+    <div class="container">
+     <h1 class="banner-title">
+        Car Sharing
+     </h1>
+     <p class="banner-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatum?
+     </p>
+    <div class="banner-buttons">
+        <a href="#" class="btn_btn_banner_red">Share a car</a>
+        <a href="#" class="btn_btn_banner_white">Key features</a>
+    </div>
+    </div>
+</section>
+
+<section class="page_content_blog_articles_first">
+    <article class="container">
+        <h2 class="section_title">BLOG</h2>
+
+        <div class="articles_blog">
+        <article class="article">
+            <img src="images/photo1.png" alt="" class="article-photo-img">
+            <h3 class="article-title">Lorem ipsum dolor sit.</h3>
+            <p class="article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus.
+            </p>
+            <a href="" class="article-btn">read more</a>
+        </article>
+        <article class="article">
+                <img src="images/photo2.png" alt="" class="article-photo-img">
+            <h3 class="article-title">Lorem ipsum dolor sit.</h3>
+            <p class="article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus.
+            </p>
+            <a href="" class="article-btn">read more</a>
+        </article>
+        <article class="article">
+                <img src="images/photo3.png" alt="" class="article-photo-img">
+            <h3 class="article-title">Lorem ipsum dolor sit.</h3>
+            <p class="article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus.
+            </p>
+            <a href="" class="article-btn">read more</a>
+        </article>
+        </div>
+    </article>
+</section>
+
+<section class="page_content_blog_articles_second">
+    <div class="container">
+        <h2 class="section2_title2">SERVICE</h2>
+
+        <div class="article_service">
+        <article class="article_section2">
+            <a href="">
+                <img src="images/mini1.png" alt="" class="article-photo-img-2">
+            </a>
+            <h3 class="article-title">Lorem ipsum dolor sit.</h3>
+            <p class="article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus.
+            </p>
+            <a href="" class="article-btn-section2">read more</a>
+        </article>
+        <article class="article_section2">
+        <a href="">
+                <img src="images/mini2.png" alt="" class="article-photo-img-2">
+            </a>
+            <h3 class="article-title">Lorem ipsum dolor sit.</h3>
+            <p class="article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus.
+            </p>
+            <a href="" class="article-btn-section2">read more</a>
+        </article>
+        <article class="article_section2">
+            <a href="">
+                <img src="images/mini3.png" alt="" class="article-photo-img-2">
+            </a>
+            <h3 class="article-title">Lorem ipsum dolor sit.</h3>
+            <p class="article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus.
+            </p>
+            <a href="" class="article-btn-section2">read more</a>
+        </article>
+        <article class="article_section2">
+        <a href="">
+                <img src="images/mini4.png" alt="" class="article-photo-img-2">
+            </a>
+            <h3 class="article-title">Lorem ipsum dolor sit.</h3>
+            <p class="article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus.
+            </p>
+            <a href="" class="article-btn-section2">read more</a>
+        </article>
+        </div>
+    </div>
+</section>
+
+<section class="page_content_contact">
+    <div class="container">
+        <h2 class="section3_title">CONTACT</h2>
+        <div class="section3_content">
+            <img src="images/Form%20Photo.png" alt="" class="form-photo-img">
+
+            <form>
+                <input type="text" name="name" id="name" placeholder="Type your name">
+                <input type="email" name="email" id="email" placeholder="Type your e-mail">
+                <textarea name="message" id="message" placeholder="Type your message"></textarea>
+                 <label>
+                    <input type="checkbox" name="consent" id="consent"/>
+                     <span class="customer-checkbox"></span>
+                     <span class="labelforcheckbox">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                     </span>
+                     <button type="submit" class="btn form">Send</button>
+                 </label>
+            </form>
+        </div>
+    </div>
+</section>
 </body>
 </html>
