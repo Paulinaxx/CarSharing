@@ -138,9 +138,14 @@
         <div class="section3_content">
             <img src="images/Form%20Photo.png" alt="" class="form-photo-img">
 
-            <form>
-                <input type="text" name="name" id="name" placeholder="Type your name">
-                <input type="email" name="email" id="email" placeholder="Type your e-mail">
+            <form class="form_fields">
+                <label class="form_label" for="name"></label>
+                <input type="text" class="form_fields_name" name="name" id="name" placeholder="Type your name">
+
+                <label class="form_label" for="email"></label>
+                <input type="email" class="form_fields_email" name="email" id="email" placeholder="Type your e-mail">
+
+                <label class="form_label" for="message"></label>
                 <textarea name="message" id="message" placeholder="Type your message"></textarea>
                  <label>
                     <input type="checkbox" name="consent" id="consent"/>
@@ -148,10 +153,42 @@
                      <span class="label-for-checkbox">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
                      </span>
                  </label>
-                     <button type="submit" class="btn form">Send</button>
+                     <button type="submit" class="btn_form">Send</button>
             </form>
         </div>
     </div>
 </section>
+<footer class="footer">
+    <div class="footer container">
+        <div class="small_logo">
+            <a href="/" class="page-icon">
+                <img src="images/Icon%20Logo%20Normal.svg" alt="logo">
+                <span class="logo">Car<span>Sharing</span></span>
+            </a>
+        </div>
+        <div class="links">
+            <nav class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Share regulation</a></li>
+                </ul>
+            </nav>
+        </div>
+            <nav class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Our Fleet</a></li>
+                    <li><a href="#">Our Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copy">
+            <p class="copyright">Copyright © Coders Lab</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

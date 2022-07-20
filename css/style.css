@@ -9,27 +9,43 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.page-header a {
-    color: white;
-    text-decoration: none;
+.page-header {
+    width: 100%;
+    height: 90px;
+    background-color: #00000066;
+}
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
 }
 
 .page-header .page-icon {
     font-size: 35px;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.page-header .page-logo span.logo {
+.page-header span.logo {
     color: #FF0000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
 }
-
+.page-header span {
+    color: #FFFFFF;
+}
 .page-nav-list {
     display: flex;
-    font-size: 16px;
-    font-weight: bold;
 }
 .page-nav-list a {
     padding: 33px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .page-nav-list a:hover {
@@ -66,7 +82,7 @@ body {
 }
 
 .banner-buttons {
-    display: flex;
+    display: inline-block;
 }
 .btn_btn_banner_red {
     background: #FF0000 0% 0% no-repeat padding-box;
@@ -90,6 +106,7 @@ body {
     letter-spacing: 0;
     color: #FF0000;
     padding: 15px 28px;
+
 }
 
 .banner::after {
@@ -98,14 +115,11 @@ body {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: red;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: red no-repeat center;
     background-image: url("../images/Icon Arrow Down.svg");
     bottom: 0;
     left: calc(50% - 28px);
 }
-
 
 section.page_content_blog_articles_first {
     margin: 100px auto;
@@ -341,29 +355,40 @@ form {
     display: flex;
     flex-direction: column;
 }
-input [type="text"],
-input [type="email"],
+.form_fields {
+    display: flex;
+    flex-direction: column;
+}
+.form_fields:first-of-type {
+    margin-bottom: 20px;
+}
+
+.form_fields_name,
+.form_fields_email,
 textarea {
     width: 444px;
     margin-bottom: 20px;
     padding: 8px 12px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 6px #FF00004D;
-    border: 1px solid #FF0000;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #D1D1D1;
     border-radius: 8px;
     color: #B2B2B2;
 }
+/*.form_fields .form_label {
+    font: normal normal 300 10px/14px Open Sans;
+    color: #B2B2B2;
+} */
+
 input [type="text"]:focus,
 input [type="email"]:focus,
 textarea:focus {
     box-shadow: 0 1px 6px #FF00004D;
     border: 1px solid #FF0000;
 }
-input [type="text"]::placeholder,
-input [type="email"]::placeholder,
+input::placeholder,
 textarea::placeholder {
     font: normal normal normal 16px/22px Nunito Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #B2B2B2;
 }
 
@@ -408,7 +433,7 @@ input[type="checkbox"]:checked + .customer-checkbox {
     flex: 1 1 0;
 }
 
-.btn form {
+.btn_form {
     background: #FFFFFF 0 0 no-repeat padding-box;
     box-shadow: 0 3px 6px #FF00004D;
     border: 1px solid #FF0000;
@@ -418,3 +443,62 @@ input[type="checkbox"]:checked + .customer-checkbox {
     align-self: flex-end;
 }
 
+footer {
+    padding: 40px 0;
+    background: #28272C 0 0 no-repeat padding-box;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .small_logo {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.page-icon img {
+    width: 16px;
+   margin-right: 8px;
+}
+.footer .page-icon {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.footer span.logo {
+    color: #FF0000;
+    text-transform: uppercase;
+    text-decoration: none;
+   /* font-family: 'Nunito Sans', sans-serif; */
+}
+footer span {
+    color: #FFFFFF;
+}
+.footer-menu {
+    flex-grow: 1;
+    font: normal normal bold 14px/19px Nunito Sans;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-menu-list li {
+    padding-bottom: 8px;
+}
+.footer-menu-list li:last-child {
+    padding-bottom: 0;
+}
+.footer-menu-list a:hover {
+    color: red;
+}
+.footer .copyright {
+    flex-grow: 5;
+    font: normal normal 300 12px/16px Nunito Sans;
+    color: #D1D1D1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
